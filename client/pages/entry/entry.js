@@ -59,6 +59,7 @@ Page({
         console.log(res)
         let credential = res.detail.errMsg.match('ok');
         // 如果用户授权
+        const userInfo = res.userInfo;
         if (credential) {
             this.userAuthorization();
 
